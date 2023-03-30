@@ -19477,7 +19477,7 @@ bearerAuth
 <ul>
 <li><a href="#debetcards">&quot;Дебетовые карты&quot;</a></li>
 <li><a href="#reports">&quot;Отчеты для внешних потребителей по СБП&quot;</a></li>
-<li><a href="#check-alfa-account">&quot;Проверка наличия открытого счета в Альфа-Банке&quot;</a></li>
+<li><a href="#check-alfa-account">&quot;Проверка наличия действующего счета в Альфа-Банке&quot;</a></li>
 </ul>
 
 <p><h2 id="debetcards">Дебетовые карты</h2></p>
@@ -41753,12 +41753,10 @@ This operation does not require authentication
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-07-30"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"shops"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">[</span><span class="w">
-      </span><span class="s2">"F76E"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"F82A"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"F11C"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"F52B"</span><span class="w">
-    </span><span class="p">]</span><span class="w">
+    </span><span class="s2">"F76E"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"F82A"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"F11C"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"F52B"</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
@@ -41821,25 +41819,22 @@ This operation does not require authentication
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"access_denied"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"error_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The request requires higher privileges than provided"</span><span class="w">
-
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 <blockquote>
 <p>404 Response</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-
-</span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown_route"</span><span class="p">,</span><span class="w">
-</span><span class="nl">"error_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Route is not found or not active"</span><span class="w">
-
+  </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown_route"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"error_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Route is not found or not active"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 <blockquote>
 <p>409 Response</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-</span><span class="err">    </span><span class="nl">"error"</span><span class="p">:</span><span class="s2">"report_already_exist"</span><span class="p">,</span><span class="w">
-</span><span class="err">   </span><span class="w"> </span><span class="nl">"error_description"</span><span class="p">:</span><span class="s2">"Incomplete report preparation process found"</span><span class="w">
+  </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"report_already_exist"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"error_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Incomplete report preparation process found"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 <blockquote>
@@ -41933,15 +41928,12 @@ bearerAuth
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-07-30"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"shops"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">[</span><span class="w">
-      </span><span class="s2">"F76E"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"F82A"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"F11C"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"F52B"</span><span class="w">
-    </span><span class="p">]</span><span class="w">
+    </span><span class="s2">"F76E"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"F82A"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"F11C"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"F52B"</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-
 </span></code></pre></div><h4 id='properties-543'>Properties</h4>
 <table><thead>
 <tr>
@@ -42000,10 +41992,8 @@ bearerAuth
 <a id="tocsbasebaasresponse"></a></p>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"error_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"reqId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"67d08b9d-044d-425e-b826-128502ab892f"</span><span class="w">
+  </span><span class="nl">"error_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-
 </span></code></pre></div><h4 id='properties-544'>Properties</h4>
 <table><thead>
 <tr>
@@ -42025,26 +42015,20 @@ bearerAuth
 <td>false</td>
 <td>Сообщение об ошибке</td>
 </tr>
-<tr>
-<td>reqId</td>
-<td>string(uuid)</td>
-<td>false</td>
-<td>Идентификатор запроса на создание отчета</td>
-</tr>
 </tbody></table>
 
 <h2 id="check-alfa-account">Проверка наличия действующего счета в Альфа-Банке</h2>
 
 <p>Метод позволяет проверить наличие действующего счета в Альфа-Банке. Если счет не найден, был закрыт или заблокирован к использованию, то метод вернет isAlfaBank = false.</p>
 
-<p>Для получения информации о наличии действующего счета в Банке необходимо отправить GET accounts/{accountNumber}/check с access_token, полученным в Alfa ID, со scope = check-account, и параметрами запроса.</p>
+<p>Для получения информации о наличии действующего счета в Банке необходимо отправить запрос GET /gd/v1/accounts/{accountNumber}/status с access_token, полученным в Alfa ID, со scope = check-account, и параметрами запроса.</p>
 
 <p>Используется токен доступа, полученный по <a href="https://alfaapi.github.io/specification/#auth-code-flow" target="_blank" ><strong>Client Credentials Flow</strong></a>.</p>
 
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">-X</span> GET accounts/<span class="o">{</span>accountNumber<span class="o">}</span>/check <span class="se">\</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">-X</span> GET /gd/v1/accounts/<span class="o">{</span>accountNumber<span class="o">}</span>/status <span class="se">\</span>
   <span class="nt">-H</span> <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
   <span class="nt">-H</span> <span class="s1">'Authorization: Bearer {access-token}'</span>
 
@@ -42412,10 +42396,10 @@ bearerAuth
 
 <p>Добавлен новый сервис &quot;B2B-кредиты&quot;. Метод API <strong>POST loan-applications</strong>  Отправка данных для скоринга и создание черновика заявки.</p>
 
-<p><strong>14 февраля 2022</strong></p>
+<p><strong>29 марта 2022</strong></p>
 
 <p>Добавлен метод API Проверка наличия действующего счета в Альфа-Банке
- <strong>GET accounts/{accountNumber}/check</strong> </p>
+<strong>GET /gd/v1/accounts/{accountNumber}/status</strong></p>
 <h1 id='faq'>FAQ. Часто задаваемые вопросы</h1><h4 id='quot-error_description-quot-quot-client-was-not-found-quot'>Что означает &quot;error_description&quot;: &quot;Client was not found&quot;?</h4>
 <p>В запросе клиента на получение токена авторизации (api/token) указан неверный client_id/client_secret. </p>
 <h4 id='quot-error_description-quot-quot-the-request-requires-higher-privileges-than-provided-by-the-access-token-quot'>Почему возникает &quot;error_description&quot;: &quot;The request requires higher privileges than provided by the access token&quot;?</h4>
